@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eOE-CB-xVl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="p1w-FR-ydG">
+            <objects>
+                <viewController id="eOE-CB-xVl" customClass="MainViewController" customModule="AppRootViewControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xco-Ee-irn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ps-Vh-KWj">
+                                <rect key="frame" x="169" y="323" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb0-aV-vTW">
+                                <rect key="frame" x="163" y="352" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="eOE-CB-xVl" eventType="touchUpInside" id="4vX-Wf-1q5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9059798121" green="0.46384900810000002" blue="0.45819371939999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2ps-Vh-KWj" firstAttribute="centerX" secondItem="xco-Ee-irn" secondAttribute="centerX" id="1Tu-Rv-PEY"/>
+                            <constraint firstItem="qb0-aV-vTW" firstAttribute="centerX" secondItem="xco-Ee-irn" secondAttribute="centerX" id="DuV-fb-l8F"/>
+                            <constraint firstItem="2ps-Vh-KWj" firstAttribute="centerY" secondItem="xco-Ee-irn" secondAttribute="centerY" id="Gx8-wU-M56"/>
+                            <constraint firstItem="qb0-aV-vTW" firstAttribute="top" secondItem="2ps-Vh-KWj" secondAttribute="bottom" constant="8" id="h7r-gQ-3vE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1YF-FX-7tz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCD-8L-pLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="110"/>
+        </scene>
+    </scenes>
+</document>
